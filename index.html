@@ -3,8 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV</title>
+    <title>cv</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <img class="avatar" src="assets/img/avatar.jpg" alt="avatar" />
+        <div>
+          <h1>Zaur Gurbanov</h1>
+          <h2>Junior Frontend Developer</h2>
+        </div>
+      </header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="contacts">
+          <h2>Contact</h2>
+          <div>
+            <ul>
+              <li>Phone: +994 51 619 27 47</li>
+              <li>E-mail: mr.zaur.gurbanov@gmail.com</li>
+              <li>Telegram: @vazovsky0</li>
+            </ul>
+          </div>
+        </section>
+        <section id="aboutme">
+          <h2>Briefly About Myself:</h2>
+          <p>
+            I hold a bachelor's degree in computer engineering. I have
+            experience coding in a variety of languages and have decided to
+            pursue a career as a programmer. I have chosen to begin my career in
+            web development. I am currently pursuing opportunities for
+            professional development in this field. At some point in the future,
+            I may decide to transition to a different profession, such as mobile
+            development. The future will reveal the specifics. However, my
+            primary professional goal is to create and develop my own products.
+          </p>
+        </section>
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript</li>
+            <li>Git, GitHub</li>
+            <li>VS Code, Webstorm</li>
+          </ul>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <p>
+            Computer engineer<br />Azerbaijan Technological University<br />
+            2014-2019
+          </p>
+        </section>
+        <section id="courses">
+          <h2>Courses</h2>
+          <ul>
+            <li>
+              Basics of programming
+              <a href="https://stepik.org/cert/248601?lang=en" target="_blank"
+                >Stepik</a
+              >
+            </li>
+            <li>
+              JavaScript basics
+              <a href="https://stepik.org/cert/2797164?lang=en" target="_blank"
+                >Stepik</a
+              >
+            </li>
+            <li>
+              English Grammar for Beginners
+              <a href="https://stepik.org/cert/1054601?lang=en" target="_blank"
+                >Stepik</a
+              >
+            </li>
+            <li></li>
+          </ul>
+        </section>
+        <section id="code">
+          <h2>Code</h2>
+          <p>
+            <b>Code example:</b>
+            <span><b>Task:</b> Count the Digit Description:</span> Take an
+            integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer. Square
+            all numbers k (0 <= k <= n) between 0 and n. Count the numbers of
+            digits d used in the writing of all the k**2. Implement the function
+            taking n and d as parameters and returning this count. <br />
+            Examples:
+            <span>
+              n = 10, d = 1 the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+              We are using the digit 1 in: 1, 16, 81, 100. The total count is
+              then 4. <br />
+              The function, when given n = 25 and d = 1 as argument, should
+              return 11 since the kk that contain the digit 1 are:* 1, 16, 81,
+              100, 121, 144, 169, 196, 361, 441. So there are 11 digits 1 for
+              the squares of numbers between 0 and 25. Note that 121 has twice
+              the digit 1.</span
+            >
+            <br />
+            <br />
+            <b>JS code:</b>
+          </p>
+          <pre>
+
+                function nbDig(n, d) {
+                    let num = 0, count = 0;
+                    let char = d + '';
+                    for (let i = 0; i <= n; i++) {
+                        num = i * i + '';
+                        for (const elem of num) {
+                            if (elem.includes(char))
+                                count++;
+                        }
+                    }
+                    return count;
+                }
+          </pre>
+        </section>
+        <section id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li>Russian - Native</li>
+            <li>Azerbaijanian - Native</li>
+            <li>Turkish - Intermediate</li>
+            <li>English - Elementary</li>
+          </ul>
+        </section>
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              Markdown & Git:
+              <a
+                href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md"
+                >CV#1. Markdown & Git</a
+              >
+            </li>
+            <li>
+              HTML&CSS:
+              <a
+                href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv-stage0.md"
+                >CV#3. CV. Cross-Check</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <img
+          src="./assets/img/logo.png"
+          alt="rs school logo"
+          class="rsschool-logo"
+        />
+        <a href="https://rs.school/courses/javascript-ru" target="_blank"
+          >rs school</a
+        >
+        <img
+          src="./assets/img/github_logo.png"
+          alt="github logo"
+          class="github-logo"
+        />
+        <a href="https://github.com/vazovsky0" target="_blank">vazovsky0</a>
+      </footer>
+      <p>2025</p>
+    </div>
+  </body>
 </html>
