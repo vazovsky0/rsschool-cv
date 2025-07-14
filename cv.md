@@ -4,7 +4,7 @@
 
 ## **Junior Frontend Developer**
 
-![Моя фотка](./assets/avatar.jpg)
+![Моя фотка](./assets/img/avatar.jpg)
 
 ---
 
