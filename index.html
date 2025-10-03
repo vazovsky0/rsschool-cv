@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header>
-        <img class="avatar" src="assets/img/avatar.jpg" alt="avatar" />
+        <img class="avatar" src="assets/img/avatar.jpg" alt="avatar">
         <div>
           <h1>Zaur Gurbanov</h1>
           <h2>Junior Frontend Developer</h2>
@@ -64,7 +64,7 @@
         <section id="education">
           <h2>Education</h2>
           <p>
-            Computer engineer<br />Azerbaijan Technological University<br />
+            Computer engineer<br>Azerbaijan Technological University<br>
             2014-2019
           </p>
         </section>
@@ -108,7 +108,7 @@
             <span>
               n = 10, d = 1 the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
               We are using the digit 1 in: 1, 16, 81, 100. The total count is
-              then 4. <br />
+              then 4. <br>
               The function, when given n = 25 and d = 1 as argument, should
               return 11 since the kk that contain the digit 1 are:* 1, 16, 81,
               100, 121, 144, 169, 196, 361, 441. So there are 11 digits 1 for
@@ -124,7 +124,7 @@
                 function nbDig(n, d) {
                     let num = 0, count = 0;
                     let char = d + '';
-                    for (let i = 0; i <= n; i++) {
+                    for (let i = 0; i &lt;= n; i++) {
                         num = i * i + '';
                         for (const elem of num) {
                             if (elem.includes(char))
