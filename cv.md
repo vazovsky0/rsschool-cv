@@ -4,7 +4,7 @@
 
 ## **Junior Frontend Developer**
 
-![Моя фотка](assets/avatar.jpg)
+![Моя фотка](images/avatar.jpg)
 
 ---
 
@@ -67,9 +67,9 @@ function nbDig(n, d) {
 
 **Completed courses:**
 
-![sertificate 1](assets/sertificate_1.png)
+![sertificate 1](images/sertificate_1.png)
 
-![sertificate 2](assets/sertificate_2.png)
+![sertificate 2](images/sertificate_2.png)
 
 ---
 
@@ -77,13 +77,13 @@ function nbDig(n, d) {
 
 - IT Step
 - My codewars level:
-  ![codewars](assets/codewars.svg)
+  ![codewars](images/codewars.svg)
 
 ---
 
 **Languages:**
 
 - English - Elementary
-  ![sertificate 3](assets/sertificate_3.png)
+  ![sertificate 3](images/sertificate_3.png)
 - Russian - Native
 - Turkish - Intermediate
